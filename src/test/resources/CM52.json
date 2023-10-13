@@ -1,0 +1,22 @@
+{
+  "$id": "CM52.json",
+  "type": "object",
+  "default": {},
+  "title": "Root Schema",
+  "required": [
+    "tracking_id"
+  ],
+  "properties": {
+    "tracking_id": {
+      "type": "string",
+      "default": "",
+      "title": "The tracking_id Schema",
+      "examples": [
+        "bde686f7-c695-4838-9cfa-71c18557c448"
+      ]
+    }
+  },
+  "examples": [{
+    "tracking_id": "bde686f7-c695-4838-9cfa-71c18557c448"
+  }]
+}

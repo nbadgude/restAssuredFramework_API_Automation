@@ -7,11 +7,11 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
-public class FileandEnv {
+public class PropertyConfig {
 	
 	public static Map<String, String> fileandenv = new HashMap<String, String>();
 	public static Properties propMain = new Properties();
-	public static Properties propPreset = new Properties();
+
 	
 	public static Map<String, String> envAndFile() {
 		String envirnoment = System.getProperty("env");
@@ -27,6 +27,8 @@ public class FileandEnv {
 						}
 						fileandenv.put("serverUrl", propMain.getProperty("serverUrl"));
 						fileandenv.put("excelpath", propMain.getProperty("excelpath"));
+						fileandenv.put("CM52", propMain.getProperty("CM52"));
+
 					}
 					else if(envirnoment.equalsIgnoreCase("qa")) {
 						FileInputStream fisqa = new FileInputStream(System.getProperty("user.dir")+"/inputs/qa.properties");
@@ -37,7 +39,8 @@ public class FileandEnv {
 							e.printStackTrace();
 						}
 						fileandenv.put("serverUrl", propMain.getProperty("serverUrl"));
-						fileandenv.put("excelpath", propMain.getProperty("excelpath"));	
+						fileandenv.put("excelpath", propMain.getProperty("excelpath"));
+						fileandenv.put("POST", propMain.getProperty("POST"));
 					}
 				} 
 				

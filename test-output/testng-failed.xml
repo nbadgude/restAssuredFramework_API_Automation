@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="postApi.createMpOder">
+      <class name="postApi.createMpOrder">
         <methods>
           <include name="baseTest"/>
           <include name="CreateMpOrder"/>
         </methods>
-      </class> <!-- postApi.createMpOder -->
+      </class> <!-- postApi.createMpOrder -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

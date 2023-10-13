@@ -1,0 +1,1991 @@
+{
+  "$id": "CM54.json",
+  "type": "array",
+  "default": [],
+  "title": "Root Schema",
+  "items": {
+    "type": "object",
+    "title": "A Schema",
+    "required": [
+      "data",
+      "mirakl_product_id",
+      "creation_date",
+      "update_date",
+      "product_sku",
+      "acceptance",
+      "validation",
+      "synchronization",
+      "catalogs",
+      "product_urls",
+      "sources",
+      "selling_authorization",
+      "data_origin"
+    ],
+    "properties": {
+      "data": {
+        "type": "object",
+        "title": "The data Schema",
+        "required": [
+          "UPC",
+          "Name",
+          "size",
+          "Brand",
+          "category",
+          "Vendor Number",
+          "Manufacture Code",
+          "Short Copy Description",
+          "Image",
+          "Side view",
+          "Secondary",
+          "weight"
+        ],
+        "properties": {
+          "UPC": {
+            "type": "array",
+            "title": "The UPC Schema",
+            "items": {
+              "type": "string",
+              "title": "A Schema",
+              "examples": [
+                "LP67-10A-250V-IS1293",
+                "B0BW6DK7NV",
+                "786521",
+                "B08LVT5MTL",
+                "B07R4M527C"
+              ]
+            },
+            "examples": [
+              [
+                "LP67-10A-250V-IS1293"],
+              [
+                "B0BW6DK7NV"],
+              [
+                "786521"],
+              [
+                "B08LVT5MTL"],
+              [
+                "B07R4M527C"]
+            ]
+          },
+          "Name": {
+            "type": "string",
+            "title": "The Name Schema",
+            "examples": [
+              "Gizga Essentials Laptop Power Cable Cord- 3 Pin Adapter Isi Certified(1 Meter/3.3 Feet)",
+              "Wooden Home Decor Table",
+              "Ear Bud",
+              "Ayurvedic Vitamin C Face Serum",
+              "Manual Incline Motorized Treadmill for Home"
+            ]
+          },
+          "size": {
+            "type": "string",
+            "title": "The size Schema",
+            "examples": [
+              "s",
+              "m",
+              "xs",
+              "xl"
+            ]
+          },
+          "Brand": {
+            "type": "string",
+            "title": "The Brand Schema",
+            "examples": [
+              "GIZGA essentials",
+              "FIREBEES",
+              "Noisefit",
+              "Blue Nectar",
+              "Lifelong"
+            ]
+          },
+          "category": {
+            "type": "string",
+            "title": "The category Schema",
+            "examples": [
+              "300100100100",
+              "500100100",
+              "300",
+              "400100100100",
+              "100100100100"
+            ]
+          },
+          "Vendor Number": {
+            "type": "string",
+            "title": "The Vendor Number Schema",
+            "examples": [
+              "2222",
+              "4545",
+              "652190",
+              "8767",
+              "3454"
+            ]
+          },
+          "Manufacture Code": {
+            "type": "string",
+            "title": "The Manufacture Code Schema",
+            "examples": [
+              "5478",
+              "5555",
+              "37912",
+              "4444",
+              "6224"
+            ]
+          },
+          "Short Copy Description": {
+            "type": "string",
+            "title": "The Short Copy Description Schema",
+            "examples": [
+              "Laptop Power Cable Cord- 3 Pin Adapter",
+              "FireBees Modern Wooden Home Decor Table,Bedside Table,Coffe Table,nightstand, Nesting Table,Centre Table,Console Table,Multipurpose Table (Brown)",
+              "Noise fit ear buds",
+              "Blue Nectar Ayurvedic Vitamin C Face Serum for Glowing Skin | 100% Natural Hyaluronic Acid Serum (9 Herbs, 30 Ml)",
+              "Lifelong FitPro LLTM09 (2.5 HP Peak) Manual Incline Motorized Treadmill for Home with 12 preset Workouts, Max Speed 12km/hr. (Free Installation Assistance) Max. User Weight 100Kg, 1 Year Warranty"
+            ]
+          },
+          "Image": {
+            "type": "object",
+            "title": "The Image Schema",
+            "required": [
+              "source"
+            ],
+            "properties": {
+              "source": {
+                "type": "string",
+                "title": "The source Schema",
+                "examples": [
+                  "https://media-dev-eu-2.mirakl.net/SOURCE/28ea8054668845a09a6740d2fb9be911",
+                  "https://media-dev-eu-2.mirakl.net/SOURCE/a10e3856a4be4e1e97ca291b195d74fc"
+                ]
+              }
+            },
+            "examples": [{
+              "source": "https://media-dev-eu-2.mirakl.net/SOURCE/28ea8054668845a09a6740d2fb9be911"
+            },
+              {
+                "source": "https://media-dev-eu-2.mirakl.net/SOURCE/a10e3856a4be4e1e97ca291b195d74fc"
+              }]
+          },
+          "Side view": {
+            "type": "object",
+            "title": "The Side view Schema",
+            "required": [
+              "source"
+            ],
+            "properties": {
+              "source": {
+                "type": "string",
+                "title": "The source Schema",
+                "examples": [
+                  "https://media-dev-eu-2.mirakl.net/SOURCE/28ea8054668845a09a6740d2fb9be911",
+                  "https://media-dev-eu-2.mirakl.net/SOURCE/5179c9adef9945449d3c3b0f4ee2b3d9"
+                ]
+              }
+            },
+            "examples": [{
+              "source": "https://media-dev-eu-2.mirakl.net/SOURCE/28ea8054668845a09a6740d2fb9be911"
+            },
+              {
+                "source": "https://media-dev-eu-2.mirakl.net/SOURCE/5179c9adef9945449d3c3b0f4ee2b3d9"
+              }]
+          },
+          "Secondary": {
+            "type": "object",
+            "title": "The Secondary Schema",
+            "required": [
+              "source"
+            ],
+            "properties": {
+              "source": {
+                "type": "string",
+                "title": "The source Schema",
+                "examples": [
+                  "https://media-dev-eu-2.mirakl.net/SOURCE/28ea8054668845a09a6740d2fb9be911",
+                  "https://media-dev-eu-2.mirakl.net/SOURCE/e6124b2904be4565b0099d60134a6c4d"
+                ]
+              }
+            },
+            "examples": [{
+              "source": "https://media-dev-eu-2.mirakl.net/SOURCE/28ea8054668845a09a6740d2fb9be911"
+            },
+              {
+                "source": "https://media-dev-eu-2.mirakl.net/SOURCE/e6124b2904be4565b0099d60134a6c4d"
+              }]
+          },
+          "weight": {
+            "type": "string",
+            "default": "",
+            "title": "The weight Schema",
+            "examples": [
+              "30"
+            ]
+          }
+        },
+        "examples": [{
+          "UPC": [
+            "LP67-10A-250V-IS1293"],
+          "Name": "Gizga Essentials Laptop Power Cable Cord- 3 Pin Adapter Isi Certified(1 Meter/3.3 Feet)",
+          "size": "s",
+          "Brand": "GIZGA essentials",
+          "category": "300100100100",
+          "Vendor Number": "2222",
+          "Manufacture Code": "5478",
+          "Short Copy Description": "Laptop Power Cable Cord- 3 Pin Adapter",
+          "Image": {
+            "source": "https://media-dev-eu-2.mirakl.net/SOURCE/28ea8054668845a09a6740d2fb9be911"
+          },
+          "Side view": {
+            "source": "https://media-dev-eu-2.mirakl.net/SOURCE/28ea8054668845a09a6740d2fb9be911"
+          },
+          "Secondary": {
+            "source": "https://media-dev-eu-2.mirakl.net/SOURCE/28ea8054668845a09a6740d2fb9be911"
+          }
+        },
+          {
+            "UPC": [
+              "B0BW6DK7NV"],
+            "Name": "Wooden Home Decor Table",
+            "size": "m",
+            "Brand": "FIREBEES",
+            "category": "500100100",
+            "Vendor Number": "4545",
+            "Manufacture Code": "5555",
+            "Short Copy Description": "FireBees Modern Wooden Home Decor Table,Bedside Table,Coffe Table,nightstand, Nesting Table,Centre Table,Console Table,Multipurpose Table (Brown)"
+          },
+          {
+            "UPC": [
+              "786521"],
+            "Name": "Ear Bud",
+            "Brand": "Noisefit",
+            "category": "300",
+            "Vendor Number": "652190",
+            "Manufacture Code": "37912",
+            "Short Copy Description": "Noise fit ear buds",
+            "Image": {
+              "source": "https://media-dev-eu-2.mirakl.net/SOURCE/a10e3856a4be4e1e97ca291b195d74fc"
+            },
+            "Side view": {
+              "source": "https://media-dev-eu-2.mirakl.net/SOURCE/5179c9adef9945449d3c3b0f4ee2b3d9"
+            },
+            "Secondary": {
+              "source": "https://media-dev-eu-2.mirakl.net/SOURCE/e6124b2904be4565b0099d60134a6c4d"
+            }
+          },
+          {
+            "UPC": [
+              "B08LVT5MTL"],
+            "Name": "Ayurvedic Vitamin C Face Serum",
+            "size": "xs",
+            "Brand": "Blue Nectar",
+            "category": "400100100100",
+            "Vendor Number": "8767",
+            "Manufacture Code": "4444",
+            "Short Copy Description": "Blue Nectar Ayurvedic Vitamin C Face Serum for Glowing Skin | 100% Natural Hyaluronic Acid Serum (9 Herbs, 30 Ml)"
+          },
+          {
+            "UPC": [
+              "B07R4M527C"],
+            "Name": "Manual Incline Motorized Treadmill for Home",
+            "size": "xl",
+            "Brand": "Lifelong",
+            "weight": "30",
+            "category": "100100100100",
+            "Vendor Number": "3454",
+            "Manufacture Code": "6224",
+            "Short Copy Description": "Lifelong FitPro LLTM09 (2.5 HP Peak) Manual Incline Motorized Treadmill for Home with 12 preset Workouts, Max Speed 12km/hr. (Free Installation Assistance) Max. User Weight 100Kg, 1 Year Warranty"
+          }]
+      },
+      "mirakl_product_id": {
+        "type": "string",
+        "title": "The mirakl_product_id Schema",
+        "examples": [
+          "f2eefbad-c7fa-4035-9d30-a52e58aeda83",
+          "6937227e-7f87-4342-b3e0-c3d4c6c61920",
+          "7568cf7e-aa15-4193-a783-b6beb3cd8615",
+          "bb87094d-3dea-4729-8995-633ce7b1eba3",
+          "0b919edb-43e7-48ac-89b0-3323e68b9504"
+        ]
+      },
+      "creation_date": {
+        "type": "string",
+        "title": "The creation_date Schema",
+        "examples": [
+          "2023-05-18T08:29:20.233Z",
+          "2023-05-18T08:29:20.240Z",
+          "2023-06-15T12:54:16.591Z",
+          "2023-05-18T08:29:20.237Z",
+          "2023-05-18T08:29:20.205Z"
+        ]
+      },
+      "update_date": {
+        "type": "string",
+        "title": "The update_date Schema",
+        "examples": [
+          "2023-07-06T12:05:57.295Z",
+          "2023-05-18T08:47:00.775Z",
+          "2023-07-06T12:10:51.787Z"
+        ]
+      },
+      "product_sku": {
+        "type": "string",
+        "title": "The product_sku Schema",
+        "examples": [
+          "FollettSku_1",
+          "FollettSku_3",
+          "FollettSku_4",
+          "FollettSku_5"
+        ]
+      },
+      "acceptance": {
+        "type": "object",
+        "title": "The acceptance Schema",
+        "required": [
+          "status"
+        ],
+        "properties": {
+          "status": {
+            "type": "string",
+            "title": "The status Schema",
+            "examples": [
+              "ACCEPTED"
+            ]
+          }
+        },
+        "examples": [{
+          "status": "ACCEPTED"
+        },
+          {
+            "status": "ACCEPTED"
+          },
+          {
+            "status": "ACCEPTED"
+          },
+          {
+            "status": "ACCEPTED"
+          },
+          {
+            "status": "ACCEPTED"
+          }]
+      },
+      "validation": {
+        "type": "object",
+        "title": "The validation Schema",
+        "required": [
+          "status"
+        ],
+        "properties": {
+          "status": {
+            "type": "string",
+            "title": "The status Schema",
+            "examples": [
+              "VALID"
+            ]
+          }
+        },
+        "examples": [{
+          "status": "VALID"
+        },
+          {
+            "status": "VALID"
+          },
+          {
+            "status": "VALID"
+          },
+          {
+            "status": "VALID"
+          },
+          {
+            "status": "VALID"
+          }]
+      },
+      "synchronization": {
+        "type": "object",
+        "title": "The synchronization Schema",
+        "required": [
+          "status"
+        ],
+        "properties": {
+          "status": {
+            "type": "string",
+            "title": "The status Schema",
+            "examples": [
+              "SYNCHRONIZED",
+              "PENDING"
+            ]
+          }
+        },
+        "examples": [{
+          "status": "SYNCHRONIZED"
+        },
+          {
+            "status": "SYNCHRONIZED"
+          },
+          {
+            "status": "PENDING"
+          },
+          {
+            "status": "SYNCHRONIZED"
+          },
+          {
+            "status": "SYNCHRONIZED"
+          }]
+      },
+      "catalogs": {
+        "type": "array",
+        "title": "The catalogs Schema",
+        "items": {},
+        "examples": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      "product_urls": {
+        "type": "array",
+        "title": "The product_urls Schema",
+        "items": {},
+        "examples": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      "sources": {
+        "type": "array",
+        "title": "The sources Schema",
+        "items": {
+          "type": "object",
+          "title": "A Schema",
+          "required": [
+            "provider_code",
+            "provider_sku"
+          ],
+          "properties": {
+            "provider_code": {
+              "type": "string",
+              "title": "The provider_code Schema",
+              "examples": [
+                "2000",
+                "2001"
+              ]
+            },
+            "provider_sku": {
+              "type": "string",
+              "title": "The provider_sku Schema",
+              "examples": [
+                "FollettShopDev_LA_1",
+                "ABCSeller_LA_1",
+                "FollettShopDev_NS_1",
+                "ABCSeller_NS_1",
+                "sku999",
+                "FollettShopDev_AV_1",
+                "ABCSeller_AV_1",
+                "FollettShopDev_Tr_1",
+                "ABCSeller_Tr_1"
+              ]
+            }
+          },
+          "examples": [{
+            "provider_code": "2000",
+            "provider_sku": "FollettShopDev_LA_1"
+          },
+            {
+              "provider_code": "2001",
+              "provider_sku": "ABCSeller_LA_1"
+            },
+            {
+              "provider_code": "2000",
+              "provider_sku": "FollettShopDev_NS_1"
+            },
+            {
+              "provider_code": "2001",
+              "provider_sku": "ABCSeller_NS_1"
+            },
+            {
+              "provider_code": "2000",
+              "provider_sku": "sku999"
+            },
+            {
+              "provider_code": "2000",
+              "provider_sku": "FollettShopDev_AV_1"
+            },
+            {
+              "provider_code": "2001",
+              "provider_sku": "ABCSeller_AV_1"
+            },
+            {
+              "provider_code": "2000",
+              "provider_sku": "FollettShopDev_Tr_1"
+            },
+            {
+              "provider_code": "2001",
+              "provider_sku": "ABCSeller_Tr_1"
+            }]
+        },
+        "examples": [
+          [{
+            "provider_code": "2000",
+            "provider_sku": "FollettShopDev_LA_1"
+          },
+            {
+              "provider_code": "2001",
+              "provider_sku": "ABCSeller_LA_1"
+            }],
+          [{
+            "provider_code": "2000",
+            "provider_sku": "FollettShopDev_NS_1"
+          },
+            {
+              "provider_code": "2001",
+              "provider_sku": "ABCSeller_NS_1"
+            }],
+          [{
+            "provider_code": "2000",
+            "provider_sku": "sku999"
+          }],
+          [{
+            "provider_code": "2000",
+            "provider_sku": "FollettShopDev_AV_1"
+          },
+            {
+              "provider_code": "2001",
+              "provider_sku": "ABCSeller_AV_1"
+            }],
+          [{
+            "provider_code": "2000",
+            "provider_sku": "FollettShopDev_Tr_1"
+          },
+            {
+              "provider_code": "2001",
+              "provider_sku": "ABCSeller_Tr_1"
+            }]
+        ]
+      },
+      "selling_authorization": {
+        "type": "object",
+        "title": "The selling_authorization Schema",
+        "required": [
+          "restricted",
+          "authorized_selling_shop_ids"
+        ],
+        "properties": {
+          "restricted": {
+            "type": "boolean",
+            "title": "The restricted Schema",
+            "examples": [
+              false
+            ]
+          },
+          "authorized_selling_shop_ids": {
+            "type": "array",
+            "title": "The authorized_selling_shop_ids Schema",
+            "items": {},
+            "examples": [
+              [],
+              [],
+              [],
+              [],
+              []
+            ]
+          }
+        },
+        "examples": [{
+          "restricted": false,
+          "authorized_selling_shop_ids": []
+        },
+          {
+            "restricted": false,
+            "authorized_selling_shop_ids": []
+          },
+          {
+            "restricted": false,
+            "authorized_selling_shop_ids": []
+          },
+          {
+            "restricted": false,
+            "authorized_selling_shop_ids": []
+          },
+          {
+            "restricted": false,
+            "authorized_selling_shop_ids": []
+          }]
+      },
+      "data_origin": {
+        "type": "object",
+        "title": "The data_origin Schema",
+        "required": [
+          "Brand",
+          "Side view",
+          "Secondary",
+          "size",
+          "Vendor Number",
+          "Manufacture Code",
+          "category",
+          "Image",
+          "Short Copy Description",
+          "Name",
+          "weight"
+        ],
+        "properties": {
+          "Brand": {
+            "type": "object",
+            "title": "The Brand Schema",
+            "required": [
+              "origin",
+              "provider_code"
+            ],
+            "properties": {
+              "origin": {
+                "type": "string",
+                "title": "The origin Schema",
+                "examples": [
+                  "PROVIDER"
+                ]
+              },
+              "provider_code": {
+                "type": "string",
+                "title": "The provider_code Schema",
+                "examples": [
+                  "2001",
+                  "2000"
+                ]
+              }
+            },
+            "examples": [{
+              "origin": "PROVIDER",
+              "provider_code": "2001"
+            },
+              {
+                "origin": "PROVIDER",
+                "provider_code": "2001"
+              },
+              {
+                "origin": "PROVIDER",
+                "provider_code": "2000"
+              },
+              {
+                "origin": "PROVIDER",
+                "provider_code": "2001"
+              },
+              {
+                "origin": "PROVIDER",
+                "provider_code": "2001"
+              }]
+          },
+          "Side view": {
+            "type": "object",
+            "title": "The Side view Schema",
+            "required": [
+              "origin"
+            ],
+            "properties": {
+              "origin": {
+                "type": "string",
+                "title": "The origin Schema",
+                "examples": [
+                  "OPERATOR"
+                ]
+              }
+            },
+            "examples": [{
+              "origin": "OPERATOR"
+            },
+              {
+                "origin": "OPERATOR"
+              }]
+          },
+          "Secondary": {
+            "type": "object",
+            "title": "The Secondary Schema",
+            "required": [
+              "origin"
+            ],
+            "properties": {
+              "origin": {
+                "type": "string",
+                "title": "The origin Schema",
+                "examples": [
+                  "OPERATOR"
+                ]
+              }
+            },
+            "examples": [{
+              "origin": "OPERATOR"
+            },
+              {
+                "origin": "OPERATOR"
+              }]
+          },
+          "size": {
+            "type": "object",
+            "title": "The size Schema",
+            "required": [
+              "origin",
+              "provider_code"
+            ],
+            "properties": {
+              "origin": {
+                "type": "string",
+                "title": "The origin Schema",
+                "examples": [
+                  "PROVIDER"
+                ]
+              },
+              "provider_code": {
+                "type": "string",
+                "title": "The provider_code Schema",
+                "examples": [
+                  "2000"
+                ]
+              }
+            },
+            "examples": [{
+              "origin": "PROVIDER",
+              "provider_code": "2000"
+            },
+              {
+                "origin": "PROVIDER",
+                "provider_code": "2000"
+              },
+              {
+                "origin": "PROVIDER",
+                "provider_code": "2000"
+              },
+              {
+                "origin": "PROVIDER",
+                "provider_code": "2000"
+              }]
+          },
+          "Vendor Number": {
+            "type": "object",
+            "title": "The Vendor Number Schema",
+            "required": [
+              "origin",
+              "provider_code"
+            ],
+            "properties": {
+              "origin": {
+                "type": "string",
+                "title": "The origin Schema",
+                "examples": [
+                  "PROVIDER"
+                ]
+              },
+              "provider_code": {
+                "type": "string",
+                "title": "The provider_code Schema",
+                "examples": [
+                  "2001",
+                  "2000"
+                ]
+              }
+            },
+            "examples": [{
+              "origin": "PROVIDER",
+              "provider_code": "2001"
+            },
+              {
+                "origin": "PROVIDER",
+                "provider_code": "2001"
+              },
+              {
+                "origin": "PROVIDER",
+                "provider_code": "2000"
+              },
+              {
+                "origin": "PROVIDER",
+                "provider_code": "2001"
+              },
+              {
+                "origin": "PROVIDER",
+                "provider_code": "2001"
+              }]
+          },
+          "Manufacture Code": {
+            "type": "object",
+            "title": "The Manufacture Code Schema",
+            "required": [
+              "origin",
+              "provider_code"
+            ],
+            "properties": {
+              "origin": {
+                "type": "string",
+                "title": "The origin Schema",
+                "examples": [
+                  "PROVIDER"
+                ]
+              },
+              "provider_code": {
+                "type": "string",
+                "title": "The provider_code Schema",
+                "examples": [
+                  "2001",
+                  "2000"
+                ]
+              }
+            },
+            "examples": [{
+              "origin": "PROVIDER",
+              "provider_code": "2001"
+            },
+              {
+                "origin": "PROVIDER",
+                "provider_code": "2001"
+              },
+              {
+                "origin": "PROVIDER",
+                "provider_code": "2000"
+              },
+              {
+                "origin": "PROVIDER",
+                "provider_code": "2001"
+              },
+              {
+                "origin": "PROVIDER",
+                "provider_code": "2001"
+              }]
+          },
+          "category": {
+            "type": "object",
+            "title": "The category Schema",
+            "required": [
+              "origin",
+              "provider_code"
+            ],
+            "properties": {
+              "origin": {
+                "type": "string",
+                "title": "The origin Schema",
+                "examples": [
+                  "PROVIDER"
+                ]
+              },
+              "provider_code": {
+                "type": "string",
+                "title": "The provider_code Schema",
+                "examples": [
+                  "2001",
+                  "2000"
+                ]
+              }
+            },
+            "examples": [{
+              "origin": "PROVIDER",
+              "provider_code": "2001"
+            },
+              {
+                "origin": "PROVIDER",
+                "provider_code": "2001"
+              },
+              {
+                "origin": "PROVIDER",
+                "provider_code": "2000"
+              },
+              {
+                "origin": "PROVIDER",
+                "provider_code": "2001"
+              },
+              {
+                "origin": "PROVIDER",
+                "provider_code": "2001"
+              }]
+          },
+          "Image": {
+            "type": "object",
+            "title": "The Image Schema",
+            "required": [
+              "origin",
+              "provider_code"
+            ],
+            "properties": {
+              "origin": {
+                "type": "string",
+                "title": "The origin Schema",
+                "examples": [
+                  "PROVIDER",
+                  "OPERATOR"
+                ]
+              },
+              "provider_code": {
+                "type": "string",
+                "default": "",
+                "title": "The provider_code Schema",
+                "examples": [
+                  "2000"
+                ]
+              }
+            },
+            "examples": [{
+              "origin": "PROVIDER",
+              "provider_code": "2000"
+            },
+              {
+                "origin": "OPERATOR"
+              }]
+          },
+          "Short Copy Description": {
+            "type": "object",
+            "title": "The Short Copy Description Schema",
+            "required": [
+              "origin",
+              "provider_code"
+            ],
+            "properties": {
+              "origin": {
+                "type": "string",
+                "title": "The origin Schema",
+                "examples": [
+                  "PROVIDER"
+                ]
+              },
+              "provider_code": {
+                "type": "string",
+                "title": "The provider_code Schema",
+                "examples": [
+                  "2001",
+                  "2000"
+                ]
+              }
+            },
+            "examples": [{
+              "origin": "PROVIDER",
+              "provider_code": "2001"
+            },
+              {
+                "origin": "PROVIDER",
+                "provider_code": "2001"
+              },
+              {
+                "origin": "PROVIDER",
+                "provider_code": "2000"
+              },
+              {
+                "origin": "PROVIDER",
+                "provider_code": "2001"
+              },
+              {
+                "origin": "PROVIDER",
+                "provider_code": "2001"
+              }]
+          },
+          "Name": {
+            "type": "object",
+            "title": "The Name Schema",
+            "required": [
+              "origin",
+              "provider_code"
+            ],
+            "properties": {
+              "origin": {
+                "type": "string",
+                "title": "The origin Schema",
+                "examples": [
+                  "PROVIDER"
+                ]
+              },
+              "provider_code": {
+                "type": "string",
+                "title": "The provider_code Schema",
+                "examples": [
+                  "2001",
+                  "2000"
+                ]
+              }
+            },
+            "examples": [{
+              "origin": "PROVIDER",
+              "provider_code": "2001"
+            },
+              {
+                "origin": "PROVIDER",
+                "provider_code": "2001"
+              },
+              {
+                "origin": "PROVIDER",
+                "provider_code": "2000"
+              },
+              {
+                "origin": "PROVIDER",
+                "provider_code": "2001"
+              },
+              {
+                "origin": "PROVIDER",
+                "provider_code": "2001"
+              }]
+          },
+          "weight": {
+            "type": "object",
+            "default": {},
+            "title": "The weight Schema",
+            "required": [
+              "origin",
+              "provider_code"
+            ],
+            "properties": {
+              "origin": {
+                "type": "string",
+                "default": "",
+                "title": "The origin Schema",
+                "examples": [
+                  "PROVIDER"
+                ]
+              },
+              "provider_code": {
+                "type": "string",
+                "default": "",
+                "title": "The provider_code Schema",
+                "examples": [
+                  "2000"
+                ]
+              }
+            },
+            "examples": [{
+              "origin": "PROVIDER",
+              "provider_code": "2000"
+            }]
+          }
+        },
+        "examples": [{
+          "Brand": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          },
+          "Side view": {
+            "origin": "OPERATOR"
+          },
+          "Secondary": {
+            "origin": "OPERATOR"
+          },
+          "size": {
+            "origin": "PROVIDER",
+            "provider_code": "2000"
+          },
+          "Vendor Number": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          },
+          "Manufacture Code": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          },
+          "category": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          },
+          "Image": {
+            "origin": "PROVIDER",
+            "provider_code": "2000"
+          },
+          "Short Copy Description": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          },
+          "Name": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          }
+        },
+          {
+            "Brand": {
+              "origin": "PROVIDER",
+              "provider_code": "2001"
+            },
+            "size": {
+              "origin": "PROVIDER",
+              "provider_code": "2000"
+            },
+            "Vendor Number": {
+              "origin": "PROVIDER",
+              "provider_code": "2001"
+            },
+            "Manufacture Code": {
+              "origin": "PROVIDER",
+              "provider_code": "2001"
+            },
+            "category": {
+              "origin": "PROVIDER",
+              "provider_code": "2001"
+            },
+            "Short Copy Description": {
+              "origin": "PROVIDER",
+              "provider_code": "2001"
+            },
+            "Name": {
+              "origin": "PROVIDER",
+              "provider_code": "2001"
+            }
+          },
+          {
+            "Side view": {
+              "origin": "OPERATOR"
+            },
+            "Brand": {
+              "origin": "PROVIDER",
+              "provider_code": "2000"
+            },
+            "Secondary": {
+              "origin": "OPERATOR"
+            },
+            "Vendor Number": {
+              "origin": "PROVIDER",
+              "provider_code": "2000"
+            },
+            "Manufacture Code": {
+              "origin": "PROVIDER",
+              "provider_code": "2000"
+            },
+            "category": {
+              "origin": "PROVIDER",
+              "provider_code": "2000"
+            },
+            "Image": {
+              "origin": "OPERATOR"
+            },
+            "Short Copy Description": {
+              "origin": "PROVIDER",
+              "provider_code": "2000"
+            },
+            "Name": {
+              "origin": "PROVIDER",
+              "provider_code": "2000"
+            }
+          },
+          {
+            "Brand": {
+              "origin": "PROVIDER",
+              "provider_code": "2001"
+            },
+            "size": {
+              "origin": "PROVIDER",
+              "provider_code": "2000"
+            },
+            "Vendor Number": {
+              "origin": "PROVIDER",
+              "provider_code": "2001"
+            },
+            "Manufacture Code": {
+              "origin": "PROVIDER",
+              "provider_code": "2001"
+            },
+            "category": {
+              "origin": "PROVIDER",
+              "provider_code": "2001"
+            },
+            "Short Copy Description": {
+              "origin": "PROVIDER",
+              "provider_code": "2001"
+            },
+            "Name": {
+              "origin": "PROVIDER",
+              "provider_code": "2001"
+            }
+          },
+          {
+            "Brand": {
+              "origin": "PROVIDER",
+              "provider_code": "2001"
+            },
+            "size": {
+              "origin": "PROVIDER",
+              "provider_code": "2000"
+            },
+            "Vendor Number": {
+              "origin": "PROVIDER",
+              "provider_code": "2001"
+            },
+            "weight": {
+              "origin": "PROVIDER",
+              "provider_code": "2000"
+            },
+            "Manufacture Code": {
+              "origin": "PROVIDER",
+              "provider_code": "2001"
+            },
+            "category": {
+              "origin": "PROVIDER",
+              "provider_code": "2001"
+            },
+            "Short Copy Description": {
+              "origin": "PROVIDER",
+              "provider_code": "2001"
+            },
+            "Name": {
+              "origin": "PROVIDER",
+              "provider_code": "2001"
+            }
+          }]
+      }
+    },
+    "examples": [{
+      "data": {
+        "UPC": [
+          "LP67-10A-250V-IS1293"],
+        "Name": "Gizga Essentials Laptop Power Cable Cord- 3 Pin Adapter Isi Certified(1 Meter/3.3 Feet)",
+        "size": "s",
+        "Brand": "GIZGA essentials",
+        "category": "300100100100",
+        "Vendor Number": "2222",
+        "Manufacture Code": "5478",
+        "Short Copy Description": "Laptop Power Cable Cord- 3 Pin Adapter",
+        "Image": {
+          "source": "https://media-dev-eu-2.mirakl.net/SOURCE/28ea8054668845a09a6740d2fb9be911"
+        },
+        "Side view": {
+          "source": "https://media-dev-eu-2.mirakl.net/SOURCE/28ea8054668845a09a6740d2fb9be911"
+        },
+        "Secondary": {
+          "source": "https://media-dev-eu-2.mirakl.net/SOURCE/28ea8054668845a09a6740d2fb9be911"
+        }
+      },
+      "mirakl_product_id": "f2eefbad-c7fa-4035-9d30-a52e58aeda83",
+      "creation_date": "2023-05-18T08:29:20.233Z",
+      "update_date": "2023-07-06T12:05:57.295Z",
+      "product_sku": "FollettSku_1",
+      "acceptance": {
+        "status": "ACCEPTED"
+      },
+      "validation": {
+        "status": "VALID"
+      },
+      "synchronization": {
+        "status": "SYNCHRONIZED"
+      },
+      "catalogs": [],
+      "product_urls": [],
+      "sources": [{
+        "provider_code": "2000",
+        "provider_sku": "FollettShopDev_LA_1"
+      },
+        {
+          "provider_code": "2001",
+          "provider_sku": "ABCSeller_LA_1"
+        }],
+      "selling_authorization": {
+        "restricted": false,
+        "authorized_selling_shop_ids": []
+      },
+      "data_origin": {
+        "Brand": {
+          "origin": "PROVIDER",
+          "provider_code": "2001"
+        },
+        "Side view": {
+          "origin": "OPERATOR"
+        },
+        "Secondary": {
+          "origin": "OPERATOR"
+        },
+        "size": {
+          "origin": "PROVIDER",
+          "provider_code": "2000"
+        },
+        "Vendor Number": {
+          "origin": "PROVIDER",
+          "provider_code": "2001"
+        },
+        "Manufacture Code": {
+          "origin": "PROVIDER",
+          "provider_code": "2001"
+        },
+        "category": {
+          "origin": "PROVIDER",
+          "provider_code": "2001"
+        },
+        "Image": {
+          "origin": "PROVIDER",
+          "provider_code": "2000"
+        },
+        "Short Copy Description": {
+          "origin": "PROVIDER",
+          "provider_code": "2001"
+        },
+        "Name": {
+          "origin": "PROVIDER",
+          "provider_code": "2001"
+        }
+      }
+    },
+      {
+        "data": {
+          "UPC": [
+            "B0BW6DK7NV"],
+          "Name": "Wooden Home Decor Table",
+          "size": "m",
+          "Brand": "FIREBEES",
+          "category": "500100100",
+          "Vendor Number": "4545",
+          "Manufacture Code": "5555",
+          "Short Copy Description": "FireBees Modern Wooden Home Decor Table,Bedside Table,Coffe Table,nightstand, Nesting Table,Centre Table,Console Table,Multipurpose Table (Brown)"
+        },
+        "mirakl_product_id": "6937227e-7f87-4342-b3e0-c3d4c6c61920",
+        "creation_date": "2023-05-18T08:29:20.240Z",
+        "update_date": "2023-05-18T08:47:00.775Z",
+        "product_sku": "FollettSku_3",
+        "acceptance": {
+          "status": "ACCEPTED"
+        },
+        "validation": {
+          "status": "VALID"
+        },
+        "synchronization": {
+          "status": "SYNCHRONIZED"
+        },
+        "catalogs": [],
+        "product_urls": [],
+        "sources": [{
+          "provider_code": "2000",
+          "provider_sku": "FollettShopDev_NS_1"
+        },
+          {
+            "provider_code": "2001",
+            "provider_sku": "ABCSeller_NS_1"
+          }],
+        "selling_authorization": {
+          "restricted": false,
+          "authorized_selling_shop_ids": []
+        },
+        "data_origin": {
+          "Brand": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          },
+          "size": {
+            "origin": "PROVIDER",
+            "provider_code": "2000"
+          },
+          "Vendor Number": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          },
+          "Manufacture Code": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          },
+          "category": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          },
+          "Short Copy Description": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          },
+          "Name": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          }
+        }
+      },
+      {
+        "data": {
+          "UPC": [
+            "786521"],
+          "Name": "Ear Bud",
+          "Brand": "Noisefit",
+          "category": "300",
+          "Vendor Number": "652190",
+          "Manufacture Code": "37912",
+          "Short Copy Description": "Noise fit ear buds",
+          "Image": {
+            "source": "https://media-dev-eu-2.mirakl.net/SOURCE/a10e3856a4be4e1e97ca291b195d74fc"
+          },
+          "Side view": {
+            "source": "https://media-dev-eu-2.mirakl.net/SOURCE/5179c9adef9945449d3c3b0f4ee2b3d9"
+          },
+          "Secondary": {
+            "source": "https://media-dev-eu-2.mirakl.net/SOURCE/e6124b2904be4565b0099d60134a6c4d"
+          }
+        },
+        "mirakl_product_id": "7568cf7e-aa15-4193-a783-b6beb3cd8615",
+        "creation_date": "2023-06-15T12:54:16.591Z",
+        "update_date": "2023-07-06T12:10:51.787Z",
+        "acceptance": {
+          "status": "ACCEPTED"
+        },
+        "validation": {
+          "status": "VALID"
+        },
+        "synchronization": {
+          "status": "PENDING"
+        },
+        "catalogs": [],
+        "product_urls": [],
+        "sources": [{
+          "provider_code": "2000",
+          "provider_sku": "sku999"
+        }],
+        "selling_authorization": {
+          "restricted": false,
+          "authorized_selling_shop_ids": []
+        },
+        "data_origin": {
+          "Side view": {
+            "origin": "OPERATOR"
+          },
+          "Brand": {
+            "origin": "PROVIDER",
+            "provider_code": "2000"
+          },
+          "Secondary": {
+            "origin": "OPERATOR"
+          },
+          "Vendor Number": {
+            "origin": "PROVIDER",
+            "provider_code": "2000"
+          },
+          "Manufacture Code": {
+            "origin": "PROVIDER",
+            "provider_code": "2000"
+          },
+          "category": {
+            "origin": "PROVIDER",
+            "provider_code": "2000"
+          },
+          "Image": {
+            "origin": "OPERATOR"
+          },
+          "Short Copy Description": {
+            "origin": "PROVIDER",
+            "provider_code": "2000"
+          },
+          "Name": {
+            "origin": "PROVIDER",
+            "provider_code": "2000"
+          }
+        }
+      },
+      {
+        "data": {
+          "UPC": [
+            "B08LVT5MTL"],
+          "Name": "Ayurvedic Vitamin C Face Serum",
+          "size": "xs",
+          "Brand": "Blue Nectar",
+          "category": "400100100100",
+          "Vendor Number": "8767",
+          "Manufacture Code": "4444",
+          "Short Copy Description": "Blue Nectar Ayurvedic Vitamin C Face Serum for Glowing Skin | 100% Natural Hyaluronic Acid Serum (9 Herbs, 30 Ml)"
+        },
+        "mirakl_product_id": "bb87094d-3dea-4729-8995-633ce7b1eba3",
+        "creation_date": "2023-05-18T08:29:20.237Z",
+        "update_date": "2023-05-18T08:47:00.775Z",
+        "product_sku": "FollettSku_4",
+        "acceptance": {
+          "status": "ACCEPTED"
+        },
+        "validation": {
+          "status": "VALID"
+        },
+        "synchronization": {
+          "status": "SYNCHRONIZED"
+        },
+        "catalogs": [],
+        "product_urls": [],
+        "sources": [{
+          "provider_code": "2000",
+          "provider_sku": "FollettShopDev_AV_1"
+        },
+          {
+            "provider_code": "2001",
+            "provider_sku": "ABCSeller_AV_1"
+          }],
+        "selling_authorization": {
+          "restricted": false,
+          "authorized_selling_shop_ids": []
+        },
+        "data_origin": {
+          "Brand": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          },
+          "size": {
+            "origin": "PROVIDER",
+            "provider_code": "2000"
+          },
+          "Vendor Number": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          },
+          "Manufacture Code": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          },
+          "category": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          },
+          "Short Copy Description": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          },
+          "Name": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          }
+        }
+      },
+      {
+        "data": {
+          "UPC": [
+            "B07R4M527C"],
+          "Name": "Manual Incline Motorized Treadmill for Home",
+          "size": "xl",
+          "Brand": "Lifelong",
+          "weight": "30",
+          "category": "100100100100",
+          "Vendor Number": "3454",
+          "Manufacture Code": "6224",
+          "Short Copy Description": "Lifelong FitPro LLTM09 (2.5 HP Peak) Manual Incline Motorized Treadmill for Home with 12 preset Workouts, Max Speed 12km/hr. (Free Installation Assistance) Max. User Weight 100Kg, 1 Year Warranty"
+        },
+        "mirakl_product_id": "0b919edb-43e7-48ac-89b0-3323e68b9504",
+        "creation_date": "2023-05-18T08:29:20.205Z",
+        "update_date": "2023-05-18T08:47:00.775Z",
+        "product_sku": "FollettSku_5",
+        "acceptance": {
+          "status": "ACCEPTED"
+        },
+        "validation": {
+          "status": "VALID"
+        },
+        "synchronization": {
+          "status": "SYNCHRONIZED"
+        },
+        "catalogs": [],
+        "product_urls": [],
+        "sources": [{
+          "provider_code": "2000",
+          "provider_sku": "FollettShopDev_Tr_1"
+        },
+          {
+            "provider_code": "2001",
+            "provider_sku": "ABCSeller_Tr_1"
+          }],
+        "selling_authorization": {
+          "restricted": false,
+          "authorized_selling_shop_ids": []
+        },
+        "data_origin": {
+          "Brand": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          },
+          "size": {
+            "origin": "PROVIDER",
+            "provider_code": "2000"
+          },
+          "Vendor Number": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          },
+          "weight": {
+            "origin": "PROVIDER",
+            "provider_code": "2000"
+          },
+          "Manufacture Code": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          },
+          "category": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          },
+          "Short Copy Description": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          },
+          "Name": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          }
+        }
+      }]
+  },
+  "examples": [
+    [{
+      "data": {
+        "UPC": [
+          "LP67-10A-250V-IS1293"],
+        "Name": "Gizga Essentials Laptop Power Cable Cord- 3 Pin Adapter Isi Certified(1 Meter/3.3 Feet)",
+        "size": "s",
+        "Brand": "GIZGA essentials",
+        "category": "300100100100",
+        "Vendor Number": "2222",
+        "Manufacture Code": "5478",
+        "Short Copy Description": "Laptop Power Cable Cord- 3 Pin Adapter",
+        "Image": {
+          "source": "https://media-dev-eu-2.mirakl.net/SOURCE/28ea8054668845a09a6740d2fb9be911"
+        },
+        "Side view": {
+          "source": "https://media-dev-eu-2.mirakl.net/SOURCE/28ea8054668845a09a6740d2fb9be911"
+        },
+        "Secondary": {
+          "source": "https://media-dev-eu-2.mirakl.net/SOURCE/28ea8054668845a09a6740d2fb9be911"
+        }
+      },
+      "mirakl_product_id": "f2eefbad-c7fa-4035-9d30-a52e58aeda83",
+      "creation_date": "2023-05-18T08:29:20.233Z",
+      "update_date": "2023-07-06T12:05:57.295Z",
+      "product_sku": "FollettSku_1",
+      "acceptance": {
+        "status": "ACCEPTED"
+      },
+      "validation": {
+        "status": "VALID"
+      },
+      "synchronization": {
+        "status": "SYNCHRONIZED"
+      },
+      "catalogs": [],
+      "product_urls": [],
+      "sources": [{
+        "provider_code": "2000",
+        "provider_sku": "FollettShopDev_LA_1"
+      },
+        {
+          "provider_code": "2001",
+          "provider_sku": "ABCSeller_LA_1"
+        }],
+      "selling_authorization": {
+        "restricted": false,
+        "authorized_selling_shop_ids": []
+      },
+      "data_origin": {
+        "Brand": {
+          "origin": "PROVIDER",
+          "provider_code": "2001"
+        },
+        "Side view": {
+          "origin": "OPERATOR"
+        },
+        "Secondary": {
+          "origin": "OPERATOR"
+        },
+        "size": {
+          "origin": "PROVIDER",
+          "provider_code": "2000"
+        },
+        "Vendor Number": {
+          "origin": "PROVIDER",
+          "provider_code": "2001"
+        },
+        "Manufacture Code": {
+          "origin": "PROVIDER",
+          "provider_code": "2001"
+        },
+        "category": {
+          "origin": "PROVIDER",
+          "provider_code": "2001"
+        },
+        "Image": {
+          "origin": "PROVIDER",
+          "provider_code": "2000"
+        },
+        "Short Copy Description": {
+          "origin": "PROVIDER",
+          "provider_code": "2001"
+        },
+        "Name": {
+          "origin": "PROVIDER",
+          "provider_code": "2001"
+        }
+      }
+    },
+      {
+        "data": {
+          "UPC": [
+            "B0BW6DK7NV"],
+          "Name": "Wooden Home Decor Table",
+          "size": "m",
+          "Brand": "FIREBEES",
+          "category": "500100100",
+          "Vendor Number": "4545",
+          "Manufacture Code": "5555",
+          "Short Copy Description": "FireBees Modern Wooden Home Decor Table,Bedside Table,Coffe Table,nightstand, Nesting Table,Centre Table,Console Table,Multipurpose Table (Brown)"
+        },
+        "mirakl_product_id": "6937227e-7f87-4342-b3e0-c3d4c6c61920",
+        "creation_date": "2023-05-18T08:29:20.240Z",
+        "update_date": "2023-05-18T08:47:00.775Z",
+        "product_sku": "FollettSku_3",
+        "acceptance": {
+          "status": "ACCEPTED"
+        },
+        "validation": {
+          "status": "VALID"
+        },
+        "synchronization": {
+          "status": "SYNCHRONIZED"
+        },
+        "catalogs": [],
+        "product_urls": [],
+        "sources": [{
+          "provider_code": "2000",
+          "provider_sku": "FollettShopDev_NS_1"
+        },
+          {
+            "provider_code": "2001",
+            "provider_sku": "ABCSeller_NS_1"
+          }],
+        "selling_authorization": {
+          "restricted": false,
+          "authorized_selling_shop_ids": []
+        },
+        "data_origin": {
+          "Brand": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          },
+          "size": {
+            "origin": "PROVIDER",
+            "provider_code": "2000"
+          },
+          "Vendor Number": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          },
+          "Manufacture Code": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          },
+          "category": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          },
+          "Short Copy Description": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          },
+          "Name": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          }
+        }
+      },
+      {
+        "data": {
+          "UPC": [
+            "786521"],
+          "Name": "Ear Bud",
+          "Brand": "Noisefit",
+          "category": "300",
+          "Vendor Number": "652190",
+          "Manufacture Code": "37912",
+          "Short Copy Description": "Noise fit ear buds",
+          "Image": {
+            "source": "https://media-dev-eu-2.mirakl.net/SOURCE/a10e3856a4be4e1e97ca291b195d74fc"
+          },
+          "Side view": {
+            "source": "https://media-dev-eu-2.mirakl.net/SOURCE/5179c9adef9945449d3c3b0f4ee2b3d9"
+          },
+          "Secondary": {
+            "source": "https://media-dev-eu-2.mirakl.net/SOURCE/e6124b2904be4565b0099d60134a6c4d"
+          }
+        },
+        "mirakl_product_id": "7568cf7e-aa15-4193-a783-b6beb3cd8615",
+        "creation_date": "2023-06-15T12:54:16.591Z",
+        "update_date": "2023-07-06T12:10:51.787Z",
+        "acceptance": {
+          "status": "ACCEPTED"
+        },
+        "validation": {
+          "status": "VALID"
+        },
+        "synchronization": {
+          "status": "PENDING"
+        },
+        "catalogs": [],
+        "product_urls": [],
+        "sources": [{
+          "provider_code": "2000",
+          "provider_sku": "sku999"
+        }],
+        "selling_authorization": {
+          "restricted": false,
+          "authorized_selling_shop_ids": []
+        },
+        "data_origin": {
+          "Side view": {
+            "origin": "OPERATOR"
+          },
+          "Brand": {
+            "origin": "PROVIDER",
+            "provider_code": "2000"
+          },
+          "Secondary": {
+            "origin": "OPERATOR"
+          },
+          "Vendor Number": {
+            "origin": "PROVIDER",
+            "provider_code": "2000"
+          },
+          "Manufacture Code": {
+            "origin": "PROVIDER",
+            "provider_code": "2000"
+          },
+          "category": {
+            "origin": "PROVIDER",
+            "provider_code": "2000"
+          },
+          "Image": {
+            "origin": "OPERATOR"
+          },
+          "Short Copy Description": {
+            "origin": "PROVIDER",
+            "provider_code": "2000"
+          },
+          "Name": {
+            "origin": "PROVIDER",
+            "provider_code": "2000"
+          }
+        }
+      },
+      {
+        "data": {
+          "UPC": [
+            "B08LVT5MTL"],
+          "Name": "Ayurvedic Vitamin C Face Serum",
+          "size": "xs",
+          "Brand": "Blue Nectar",
+          "category": "400100100100",
+          "Vendor Number": "8767",
+          "Manufacture Code": "4444",
+          "Short Copy Description": "Blue Nectar Ayurvedic Vitamin C Face Serum for Glowing Skin | 100% Natural Hyaluronic Acid Serum (9 Herbs, 30 Ml)"
+        },
+        "mirakl_product_id": "bb87094d-3dea-4729-8995-633ce7b1eba3",
+        "creation_date": "2023-05-18T08:29:20.237Z",
+        "update_date": "2023-05-18T08:47:00.775Z",
+        "product_sku": "FollettSku_4",
+        "acceptance": {
+          "status": "ACCEPTED"
+        },
+        "validation": {
+          "status": "VALID"
+        },
+        "synchronization": {
+          "status": "SYNCHRONIZED"
+        },
+        "catalogs": [],
+        "product_urls": [],
+        "sources": [{
+          "provider_code": "2000",
+          "provider_sku": "FollettShopDev_AV_1"
+        },
+          {
+            "provider_code": "2001",
+            "provider_sku": "ABCSeller_AV_1"
+          }],
+        "selling_authorization": {
+          "restricted": false,
+          "authorized_selling_shop_ids": []
+        },
+        "data_origin": {
+          "Brand": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          },
+          "size": {
+            "origin": "PROVIDER",
+            "provider_code": "2000"
+          },
+          "Vendor Number": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          },
+          "Manufacture Code": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          },
+          "category": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          },
+          "Short Copy Description": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          },
+          "Name": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          }
+        }
+      },
+      {
+        "data": {
+          "UPC": [
+            "B07R4M527C"],
+          "Name": "Manual Incline Motorized Treadmill for Home",
+          "size": "xl",
+          "Brand": "Lifelong",
+          "weight": "30",
+          "category": "100100100100",
+          "Vendor Number": "3454",
+          "Manufacture Code": "6224",
+          "Short Copy Description": "Lifelong FitPro LLTM09 (2.5 HP Peak) Manual Incline Motorized Treadmill for Home with 12 preset Workouts, Max Speed 12km/hr. (Free Installation Assistance) Max. User Weight 100Kg, 1 Year Warranty"
+        },
+        "mirakl_product_id": "0b919edb-43e7-48ac-89b0-3323e68b9504",
+        "creation_date": "2023-05-18T08:29:20.205Z",
+        "update_date": "2023-05-18T08:47:00.775Z",
+        "product_sku": "FollettSku_5",
+        "acceptance": {
+          "status": "ACCEPTED"
+        },
+        "validation": {
+          "status": "VALID"
+        },
+        "synchronization": {
+          "status": "SYNCHRONIZED"
+        },
+        "catalogs": [],
+        "product_urls": [],
+        "sources": [{
+          "provider_code": "2000",
+          "provider_sku": "FollettShopDev_Tr_1"
+        },
+          {
+            "provider_code": "2001",
+            "provider_sku": "ABCSeller_Tr_1"
+          }],
+        "selling_authorization": {
+          "restricted": false,
+          "authorized_selling_shop_ids": []
+        },
+        "data_origin": {
+          "Brand": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          },
+          "size": {
+            "origin": "PROVIDER",
+            "provider_code": "2000"
+          },
+          "Vendor Number": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          },
+          "weight": {
+            "origin": "PROVIDER",
+            "provider_code": "2000"
+          },
+          "Manufacture Code": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          },
+          "category": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          },
+          "Short Copy Description": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          },
+          "Name": {
+            "origin": "PROVIDER",
+            "provider_code": "2001"
+          }
+        }
+      }]
+  ]
+}

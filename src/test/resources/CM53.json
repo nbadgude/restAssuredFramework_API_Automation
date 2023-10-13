@@ -1,0 +1,53 @@
+{
+  "$id": "CM53.json",
+  "type": "object",
+  "default": {},
+  "title": "Root Schema",
+  "required": [
+    "last_updated",
+    "status",
+    "urls"
+  ],
+  "properties": {
+    "last_updated": {
+      "type": "string",
+      "default": "",
+      "title": "The last_updated Schema",
+      "examples": [
+        "2023-10-09T06:57:57.585Z"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "default": "",
+      "title": "The status Schema",
+      "examples": [
+        "COMPLETED"
+      ]
+    },
+    "urls": {
+      "type": "array",
+      "default": [],
+      "title": "The urls Schema",
+      "items": {
+        "type": "string",
+        "default": "",
+        "title": "A Schema",
+        "examples": [
+          "https://follettus-dev.mirakl.net/api/mcm/products/export/async/file/87547271-6d40-4f3f-99e2-81d7d69c59e4?file=%2F87547271-6d40-4f3f-99e2-81d7d69c59e4%2F0.json"
+        ]
+      },
+      "examples": [
+        [
+          "https://follettus-dev.mirakl.net/api/mcm/products/export/async/file/87547271-6d40-4f3f-99e2-81d7d69c59e4?file=%2F87547271-6d40-4f3f-99e2-81d7d69c59e4%2F0.json"]
+      ]
+    }
+  },
+  "examples": [{
+    "last_updated": "2023-10-09T06:57:57.585Z",
+    "status": "COMPLETED",
+    "urls": [
+      "https://follettus-dev.mirakl.net/api/mcm/products/export/async/file/87547271-6d40-4f3f-99e2-81d7d69c59e4?file=%2F87547271-6d40-4f3f-99e2-81d7d69c59e4%2F0.json"
+    ]
+  }]
+}
