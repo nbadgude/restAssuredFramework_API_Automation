@@ -3,6 +3,7 @@
     <test name="REST API AUTOMATION">
         <classes>
             <class name="postApi.CM52"/>
+            <class name="getApi.CM53"/>
         </classes>
     </test>
 </suite>
